@@ -39,15 +39,19 @@ This project demonstrates how to deploy, manage, and tear down a static website 
 ---
 
 ## 3. Validation & Testing
-* **Initial State Check:** Accessing the public URL prior to uploading files yields a default error page, confirming endpoint accessibility. *(Ref: Figure 3)*
-* **Successful Deployment Check:** Refreshing the URL post-upload serves the custom `index.html` content. *(Ref: Figure 6)*
-* **Error Routing Check:** Navigating to a non-existent path correctly triggers the defined custom error document. *(Ref: Figure 7)*
+* **Initial State Check:** Accessing the public URL prior to uploading files yields a default error page, confirming endpoint accessibility.  
+* *Screenshot Reference:* ![Error page](images/verify-url-exist.png)
+* **Successful Deployment Check:** Refreshing the URL post-upload serves the custom `index.html` content.  
+* *Screenshot Reference:* ![Open URL after uploading files ](images/verify-url.png)
+* **Error Routing Check:** Navigating to a non-existent path correctly triggers the defined custom error document. 
+* *Screenshot Reference:* ![Verify error page](images/verify-404-url.png)
 
 ---
 
 ## 4. Resource Cleanup
 To prevent ongoing cloud costs, delete the parent Resource Group, which cascades deletion to all child assets (Storage Account, containers, and blobs).
-* *Verification:* Confirming that the public endpoint URL returns an error and the Resource Group no longer appears in the Azure Portal. *(Ref: Figure 12)*
+* *Verification:* Confirming that the public endpoint URL returns an error and the Resource Group no longer appears in the Azure Portal. 
+* *Screenshot Reference:* ![Endpoint after clearing resources](images/clean.png)
 
 ---
 
